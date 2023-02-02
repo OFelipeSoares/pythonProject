@@ -9,3 +9,4 @@ print(f'Local time: {time.ctime(x)}')
 # A classe time.struct_time gera objetos sequenciais com valor de tempo retornado
 # pelas funções gmtime() e localtime(). São objetos com interface de tupla nomeada:
 # os valores podem ser acessados pelo índice e pelo nome do atributo.
+
