@@ -1,5 +1,7 @@
 # Classe Salário
 class Salario:
+    pass
+
     def __init__(self, base, bonus):
         self.base = base
         self.bonus = bonus
