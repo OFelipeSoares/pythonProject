@@ -1,4 +1,4 @@
-class Conta:
+class Conta():
     def __init__(self, numero, cpf, nomeTitular, saldo):
         self.numero = numero
         self.cpf = cpf
@@ -8,7 +8,7 @@ class Conta:
     def depositar(self, valor):
         self.saldo += valor
 
-    def sacar(self, valor):
+    def sacar(self,valor):
         if self.saldo < valor:
             return False
         else:
@@ -16,14 +16,14 @@ class Conta:
             return True
 
     def gerar_extrato(self):
-        print(f"numro: {self.numero} \n cpf: {self.cpf} \n saldo: {self.saldo}")
-def main():
-        c1 = Conta(1,1,'João', 0)
-        c1.depositar(300)
-        saque = c1.sacar(400)
-        c1.gerar_extrato()
-        print(f"O saque foi realizado? {saque}")
+        print(f"numero: {self.numero}\n cpf: {self.cpf}\nsaldo: {self.saldo}")
 
+def main():
+    c1 = Conta(1,1,"Joao",0)
+    c1.depositar(300)
+    saque = c1.sacar(400)
+    c1.gerar_extrato()
+    print(f"O saque foi realizado? {saque}")
 
 
 if __name__ == "__main__":
