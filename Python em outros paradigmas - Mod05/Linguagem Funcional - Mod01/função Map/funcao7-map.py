@@ -4,4 +4,4 @@
 # retornando um novo iterável com os valores modificados.
 
 #A função map é pura e de ordem superior, pois depende apenas de seus parâmetros e recebe uma função como parâmetro. A sua sintaxe é a seguinte:
-map(função, iterável1, iterável2...)
+map(função, iterável1, iterável2)#podem haver mais iteráveis

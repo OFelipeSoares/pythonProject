@@ -1,14 +1,15 @@
 lista = [1, 2, 3, 4, 5]
 
 
-def triplica_itens(iterable):
+def impares(iterable):
     lista_aux = []
     for item in iterable:
-        lista_aux.append(item*3)
+        if item %2 != 0:
+            lista_aux.append(item)
     return lista_aux
 
 def main():
-    nova_lista = triplica_itens(lista)
+    nova_lista = impares(lista)
     print(nova_lista)
 
 if __name__ == "__main__":
